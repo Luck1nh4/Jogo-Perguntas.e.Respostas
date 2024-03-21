@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(to right top, #d16ba5, #cb6eb3, #c273c0, #b778cd, #a87ed9, #918eeb, #749cf7, #4faaff, #00c1ff, #00d7ff, #04eafd, #5ffbf1);
+}
+
+.score .pontos{
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.conteudo{
+    width: 690px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 4% auto;
+    flex-direction: column;
+
+    background: rgba(255, 255, 255, 0.185);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.281);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.096);
+}
+
+input{
+    width: 18px;
+    height: 18px;
+  
+    background-color: #0f2e7559;
+    cursor: pointer;
+
+}
+
+input:checked{
+    background-color: #df2424;
+    cursor: pointer;
+}
+
+.conteudo h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    color: #cf7ec2;
+    text-shadow: 0px 0px 10px #ffffff;
+    letter-spacing: 1.5px;
+}
+
+.conteudo .pergunta{
+    font-size: 22px;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    
+}
+
+.conteudo .resposta{
+    padding: 10px 0;
+    color: #be1262;
+    font-weight: bold;
+    border-radius: 20px;
+    padding-left: 15px;
+    width: 500px;
+    margin: 1% 0px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.resposta > label:hover{
+    color: #cb6eb3;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+.anima{
+    padding: 10px 0;
+    color: #0f2e75;
+    font-weight: bold;
+    border-radius: 20px;
+    padding-left: 15px;
+    width: 500px;
+    animation: anima 0.8s infinite;
+    margin: 1% 0px;
+}
+
+.conteudo .res{
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.anima:hover{
+    color: #cb6eb3;
+}
+
+@keyframes anima{
+    0% {
+      background-color: #A8EB12;
+    }
+    50% {
+      background-color: #0d4c5c;
+    }
+    100% {
+      background-color: #A8EB12;
+    }
+  }
